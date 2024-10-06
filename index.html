@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITÄ KISSA SANOO?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="game">
         <div id="start-screen">
             <h1>MITÄ KISSA SANOO?</h1>
-            <button id="start-button" onclick="startGame()">ALOITA</button>
+            <button id="start-button">ALOITA</button>
         </div>
 
         <div id="question-container" style="display: none;">
-            <h1>MITÄ KISSA SANOO:</h1>
+            <h2>VALITSE OIKEA KUVA:</h2>
             <div class="options">
                 <img id="option1" class="option" onclick="selectOption(1)">
                 <img id="option2" class="option" onclick="selectOption(2)">

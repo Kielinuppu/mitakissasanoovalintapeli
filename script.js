@@ -122,7 +122,7 @@ function nextQuestion() {
 function showResult() {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = `
-        <h1>MITÄ KISSA SANOO</h1>
+        <h1>MITÄ KISSA SANOO?</h1>
         <p id="result">SAIT ${correctAnswers} / ${currentQuestions.length} OIKEIN</p>
         <div id="final-stars-container">${'<img src="tahti.avif" alt="Star" class="star-icon">'.repeat(correctAnswers)}</div>
         <button onclick="restartGame()">PELAA UUDELLEEN</button>
@@ -140,7 +140,7 @@ function restartGame() {
     
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = `
-        <h1>MITÄ KISSA SANOO</h1>
+        <h2>VALITSE OIKEA KUVA:</h2>
         <div class="options">
             <img id="option1" class="option" onclick="selectOption(1)">
             <img id="option2" class="option" onclick="selectOption(2)">
